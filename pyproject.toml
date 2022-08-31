@@ -8,6 +8,8 @@ authors = [
 dependencies = [
     "colorlog>=6.6.0",
     "pyqt5>=5.15.7",
+    "PyGObject>=3.42.2",
+    "pycairo>=1.21.0",
 ]
 requires-python = ">=3.10"
 readme = "README.md"

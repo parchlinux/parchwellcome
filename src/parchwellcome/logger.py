@@ -9,5 +9,8 @@ handler.setFormatter(
     colorlog.ColoredFormatter("%(log_color)s%(levelname)s: %(message)s")
 )
 
-logger = getLogger(__name__)
-logger.addHandler(handler)
+
+def logger(module):
+    logger = getLogger(module)
+    logger.addHandler(handler)
+    return logger
