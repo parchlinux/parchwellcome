@@ -7,12 +7,12 @@ from pathlib import Path
 from shutil import copy
 from webbrowser import open
 
-from .exc import SomeFilesNotFoundError
-from .logger import logger
+from exc import SomeFilesNotFoundError
+from logger import logger
 
 HOME = Path().home()
 AUTOSTART_PATH = HOME / ".config/autostart/parchwellcome.desktop"
-CONFIG_PATH = HOME / ".parchlinux/wellcome"
+CONFIG_PATH = HOME / ".parch/wellcome"
 
 gettext.bindtextdomain(
     "parchwellcome", Path(os.path.dirname(os.path.abspath(__file__))) / "locales"

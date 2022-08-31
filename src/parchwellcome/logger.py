@@ -6,7 +6,7 @@ __all__ = "logger"
 
 handler = colorlog.StreamHandler()
 handler.setFormatter(
-    colorlog.ColoredFormatter("%(log_color)s%(levelname)s:%(name)s:%(message)s")
+    colorlog.ColoredFormatter("%(log_color)s%(levelname)s: %(message)s")
 )
 
 logger = getLogger(__name__)
