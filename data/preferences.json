@@ -1,0 +1,19 @@
+{
+    "default_locale": "en",
+    "autostart_path": "~/.config/autostart/manjaro-hello.desktop",
+    "data_path": "/usr/share/manjaro-hello/data/",
+    "desktop_path": "/usr/share/applications/manjaro-hello.desktop",
+    "installer_path": "/usr/bin/calamares",
+    "live_path": "/run/miso/bootmnt/manjaro",
+    "locale_path": "/usr/share/locale/",
+    "logo_path": "/usr/share/icons/hicolor/64x64/apps/manjaro.png",
+    "save_path": "~/.config/manjaro-hello.json",
+    "ui_path": "/usr/share/manjaro-hello/ui/manjaro-hello.glade",
+    "style_path": "/usr/share/manjaro-hello/ui/style.css",
+    "urls": {
+        "development": "https://github.com/parchlinux",
+        "forum": "https://github.com/orgs/parchlinux/discussions",
+        "discord": "https://discord.gg/6t4Gd3zmm4",
+        "wiki": "https://blog.parchlinux.ir"
+    }
+}

@@ -52,7 +52,7 @@ summary = "Cross-platform colored terminal text."
 
 [[package]]
 name = "colorlog"
-version = "6.6.0"
+version = "6.7.0"
 requires_python = ">=3.6"
 summary = "Add colours to the output of Python's logging module."
 dependencies = [
@@ -177,6 +177,12 @@ requires_python = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 summary = "library with cross-python path, ini-parsing, io, code, log facilities"
 
 [[package]]
+name = "pycairo"
+version = "1.21.0"
+requires_python = ">=3.7"
+summary = "Python interface for cairo"
+
+[[package]]
 name = "pycodestyle"
 version = "2.9.1"
 requires_python = ">=3.6"
@@ -187,6 +193,15 @@ name = "pyflakes"
 version = "2.5.0"
 requires_python = ">=3.6"
 summary = "passive checker of Python programs"
+
+[[package]]
+name = "pygobject"
+version = "3.42.2"
+requires_python = ">=3.6, <4"
+summary = "Python bindings for GObject Introspection"
+dependencies = [
+    "pycairo<2.0,>=1.16",
+]
 
 [[package]]
 name = "pyparsing"
@@ -298,7 +313,7 @@ dependencies = [
 
 [metadata]
 lock_version = "4.0"
-content_hash = "sha256:7c5e4eb4ca7e0b3819ff1545f742a06b7c8a80e8afcb06961cf19fca889a3a0e"
+content_hash = "sha256:2c00c6f507cda947baba375acf147cc931464491fee6db615bb19bb2ec133ca0"
 
 [metadata.files]
 "atomicwrites 1.4.1" = [
@@ -349,9 +364,9 @@ content_hash = "sha256:7c5e4eb4ca7e0b3819ff1545f742a06b7c8a80e8afcb06961cf19fca8
     {url = "https://files.pythonhosted.org/packages/2b/65/24d033a9325ce42ccbfa3ca2d0866c7e89cc68e5b9d92ecaba9feef631df/colorama-0.4.5.tar.gz", hash = "sha256:e6c6b4334fc50988a639d9b98aa429a0b57da6e17b9a44f0451f930b6967b7a4"},
     {url = "https://files.pythonhosted.org/packages/77/8b/7550e87b2d308a1b711725dfaddc19c695f8c5fa413c640b2be01662f4e6/colorama-0.4.5-py2.py3-none-any.whl", hash = "sha256:854bf444933e37f5824ae7bfc1e98d5bce2ebe4160d46b5edf346a89358e99da"},
 ]
-"colorlog 6.6.0" = [
-    {url = "https://files.pythonhosted.org/packages/7d/54/e24efe5469ecb2710112055de87a2900e9494810bcfc25c12c7a0723eb64/colorlog-6.6.0-py2.py3-none-any.whl", hash = "sha256:351c51e866c86c3217f08e4b067a7974a678be78f07f85fc2d55b8babde6d94e"},
-    {url = "https://files.pythonhosted.org/packages/8e/8f/1537ebed273d43edd3bb21f1e5861549b7cfcb1d47523d7277cab988cec2/colorlog-6.6.0.tar.gz", hash = "sha256:344f73204009e4c83c5b6beb00b3c45dc70fcdae3c80db919e0a4171d006fde8"},
+"colorlog 6.7.0" = [
+    {url = "https://files.pythonhosted.org/packages/58/43/a363c213224448f9e194d626221123ce00e3fb3d87c0c22aed52b620bdd1/colorlog-6.7.0-py2.py3-none-any.whl", hash = "sha256:0d33ca236784a1ba3ff9c532d4964126d8a2c44f1f0cb1d2b0728196f512f662"},
+    {url = "https://files.pythonhosted.org/packages/78/6b/4e5481ddcdb9c255b2715f54c863629f1543e97bc8c309d1c5c131ad14f2/colorlog-6.7.0.tar.gz", hash = "sha256:bd94bd21c1e13fac7bd3153f4bc3a7dc0eb0974b8bc2fdf1a989e474f6e582e5"},
 ]
 "coverage 6.4.4" = [
     {url = "https://files.pythonhosted.org/packages/03/21/c55f5529e9bbcf3c029790ca3cea3b18bae3dd897f7461b5f2165053ee35/coverage-6.4.4-cp311-cp311-musllinux_1_1_aarch64.whl", hash = "sha256:9c7b9b498eb0c0d48b4c2abc0e10c2d78912203f972e0e63e3c9dc21f15abdaa"},
@@ -486,6 +501,17 @@ content_hash = "sha256:7c5e4eb4ca7e0b3819ff1545f742a06b7c8a80e8afcb06961cf19fca8
     {url = "https://files.pythonhosted.org/packages/98/ff/fec109ceb715d2a6b4c4a85a61af3b40c723a961e8828319fbcb15b868dc/py-1.11.0.tar.gz", hash = "sha256:51c75c4126074b472f746a24399ad32f6053d1b34b68d2fa41e558e6f4a98719"},
     {url = "https://files.pythonhosted.org/packages/f6/f0/10642828a8dfb741e5f3fbaac830550a518a775c7fff6f04a007259b0548/py-1.11.0-py2.py3-none-any.whl", hash = "sha256:607c53218732647dff4acdfcd50cb62615cedf612e72d1724fb1a0cc6405b378"},
 ]
+"pycairo 1.21.0" = [
+    {url = "https://files.pythonhosted.org/packages/01/2c/b26441fa33a8beb905bb893eb5368b6b2c713a0edd5284356c6f4cffd863/pycairo-1.21.0-cp38-cp38-win32.whl", hash = "sha256:dace6b356c476de27f8e1522428ac21a799c225703f746e2957d441f885dcb6c"},
+    {url = "https://files.pythonhosted.org/packages/39/37/6e30254f6583a8ecf6f8a103af48ef5f8c97f56bbe94cf69af6f5f80729c/pycairo-1.21.0-cp310-cp310-win_amd64.whl", hash = "sha256:f63c153a9ea3d21aff85e2caeee4b0c5d566b2368b4ed64826020d12953d76a4"},
+    {url = "https://files.pythonhosted.org/packages/48/2d/1c040c138201d4c20e426ed7edbc4baead044e6b1706858d1fe3fdd3fc56/pycairo-1.21.0-cp37-cp37m-win_amd64.whl", hash = "sha256:31e1c4850db03201d33929cbe1905ce1b33202683ebda7bb0d4dba489115066b"},
+    {url = "https://files.pythonhosted.org/packages/5d/26/0d193f24c683edf71864a28d87e19f0015c2c639bf9dd0cc2b96c4a8b18e/pycairo-1.21.0-cp37-cp37m-win32.whl", hash = "sha256:70936b19f967fa3cb3cd200c2608911227fa5d09dae21c166f64bc15e714ee41"},
+    {url = "https://files.pythonhosted.org/packages/92/a4/506564f574fa74c90b98690e8ecc8dbae1629f31fcfe0be69de45d9e1605/pycairo-1.21.0.tar.gz", hash = "sha256:251907f18a552df938aa3386657ff4b5a4937dde70e11aa042bc297957f4b74b"},
+    {url = "https://files.pythonhosted.org/packages/9d/a4/783deb9a62eb4417f2660dba97de7e3c8e22f6a9840aea294679b172ba10/pycairo-1.21.0-cp310-cp310-win32.whl", hash = "sha256:44a2ecf34968de07b3b9dfdcdbccbd25aa3cab267200f234f84e81481a73bbf6"},
+    {url = "https://files.pythonhosted.org/packages/bc/0a/62f8f61cceeec8b717b96d8773da5b2897ed6017206e1360f1694fac5e62/pycairo-1.21.0-cp38-cp38-win_amd64.whl", hash = "sha256:4357f20a6b1de8f1e8072a74ff68ab4c9a0ae698cd9f5c0f2b2cdd9b28b635f6"},
+    {url = "https://files.pythonhosted.org/packages/c5/15/73cdbade21b101e679a344c519e402948dadbc159e03bef6738317e8c2c4/pycairo-1.21.0-cp39-cp39-win_amd64.whl", hash = "sha256:26b72b813c6f9d495f71057eab89c13e70a21c92360e9265abc049e0a931fa39"},
+    {url = "https://files.pythonhosted.org/packages/f1/4c/e9149c9135ad0644b906f7890fd70502bd01f95b12e4dddfa39784826c0d/pycairo-1.21.0-cp39-cp39-win32.whl", hash = "sha256:6d37375aab9f2bb6136f076c19815d72108383baae89fbc0d6cb8e5092217d02"},
+]
 "pycodestyle 2.9.1" = [
     {url = "https://files.pythonhosted.org/packages/67/e4/fc77f1039c34b3612c4867b69cbb2b8a4e569720b1f19b0637002ee03aff/pycodestyle-2.9.1-py2.py3-none-any.whl", hash = "sha256:d1735fc58b418fd7c5f658d28d943854f8a849b01a5d0a1e6f3f3fdd0166804b"},
     {url = "https://files.pythonhosted.org/packages/b6/83/5bcaedba1f47200f0665ceb07bcb00e2be123192742ee0edfb66b600e5fd/pycodestyle-2.9.1.tar.gz", hash = "sha256:2c9607871d58c76354b697b42f5d57e1ada7d261c261efac224b664affdc5785"},
@@ -493,6 +519,9 @@ content_hash = "sha256:7c5e4eb4ca7e0b3819ff1545f742a06b7c8a80e8afcb06961cf19fca8
 "pyflakes 2.5.0" = [
     {url = "https://files.pythonhosted.org/packages/07/92/f0cb5381f752e89a598dd2850941e7f570ac3cb8ea4a344854de486db152/pyflakes-2.5.0.tar.gz", hash = "sha256:491feb020dca48ccc562a8c0cbe8df07ee13078df59813b83959cbdada312ea3"},
     {url = "https://files.pythonhosted.org/packages/dc/13/63178f59f74e53acc2165aee4b002619a3cfa7eeaeac989a9eb41edf364e/pyflakes-2.5.0-py2.py3-none-any.whl", hash = "sha256:4579f67d887f804e67edb544428f264b7b24f435b263c4614f384135cea553d2"},
+]
+"pygobject 3.42.2" = [
+    {url = "https://files.pythonhosted.org/packages/fe/40/9afaeb8d3b453fb8596fcb6c7bc2b64e434868c91eda19955742778eff74/PyGObject-3.42.2.tar.gz", hash = "sha256:21524cef33100c8fd59dc135948b703d79d303e368ce71fa60521cc971cd8aa7"},
 ]
 "pyparsing 3.0.9" = [
     {url = "https://files.pythonhosted.org/packages/6c/10/a7d0fa5baea8fe7b50f448ab742f26f52b80bfca85ac2be9d35cdd9a3246/pyparsing-3.0.9-py3-none-any.whl", hash = "sha256:5026bae9a10eeaefb61dab2f09052b9f4307d44aee4eda64b309723d8d206bbc"},
